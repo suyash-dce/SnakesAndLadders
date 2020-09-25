@@ -1,5 +1,6 @@
 public class SnakesAndLadders {
 	public static final int IS_LADDER=0;
+<<<<<<< HEAD
 	public static final int IS_SNAKE=1;
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub	
@@ -23,6 +24,12 @@ public class SnakesAndLadders {
 				case IS_SNAKE :
 					pos = pos-roll;
 =======
+=======
+	public static final int IS_SNAKE=1;	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub	
+		System.out.println("Let the Game Begin !!");
+>>>>>>> UC-5-ExactWinPosition
 		//Variables
 		int i =0;
 		int pos =0;
@@ -36,7 +43,17 @@ public class SnakesAndLadders {
 			
 			switch(CheckChance) {
 				case  IS_LADDER :
+<<<<<<< HEAD
 					int pos = pos+roll;
+=======
+					int PosNew = pos+roll;
+					if (PosNew>100) {
+						pos=pos;
+					}
+					else {
+						pos=PosNew;
+					}
+>>>>>>> UC-5-ExactWinPosition
 					break;
 				case IS_SNAKE :
 					pos = pos-roll;
@@ -46,16 +63,24 @@ public class SnakesAndLadders {
 					else {
 						pos=0;
 					}
+<<<<<<< HEAD
 >>>>>>> UC-4-PlayerWins
+=======
+>>>>>>> UC-5-ExactWinPosition
 					break;
 				default:
 					pos=pos;	
 					
 			}
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> UC-3-CheckMovement
 =======
 		}while(pos<100)
 >>>>>>> UC-4-PlayerWins
+=======
+			
+		}while(pos!=100);
+>>>>>>> UC-5-ExactWinPosition
 		}
 	}
